@@ -1,0 +1,30 @@
+body {
+  font-family: arial, 'sans-serif';
+  font-size: 13px;
+  line-height: 1.5em; }
+
+* {
+  margin: 0;
+  padding: 0;
+  padding: 0; }
+
+#headerSection {
+  background-color: #3B5998;
+  width: 100%;
+  height: 40px; }
+
+.logoBlock {
+  background: url("../images/66mSB924h08.png") no-repeat 45px -60px;
+  width: 100px;
+  height: 40px;
+  float: left; }
+
+.searchBlock {
+  margin-top: 8px; }
+  .searchBlock input {
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    padding: 4px; }
+
+/*# sourceMappingURL=styles.css.map */
