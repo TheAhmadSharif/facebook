@@ -18,13 +18,19 @@ body {
   width: 100px;
   height: 40px;
   float: left; }
+  .logoBlock:hover {
+    cursor: pointer; }
 
 .searchBlock {
-  margin-top: 8px; }
+  margin-top: 8px;
+  display: block;
+  float: left; }
   .searchBlock input {
     border: 0;
     outline: 0;
     border-radius: 2px;
-    padding: 4px; }
+    padding: 4px;
+    width: 100%;
+    max-width: 600px; }
 
 /*# sourceMappingURL=styles.css.map */
