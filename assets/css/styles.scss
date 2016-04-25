@@ -162,3 +162,63 @@ ul.header-list > li:first-child > a {
 	}
 }
 
+.connect-block {
+	float: left;
+
+	ul {
+			li {
+				display: inline-block;
+				margin-right: 2px;
+				cursor: pointer;
+				> a {
+					display: block;
+					text-indent: -999em;
+				}
+		} 
+		li.friendRequest {
+			background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -1032px;
+	    width: 60px;
+	    height: 50px;
+		}
+
+		li.msgs {
+			background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -278px;
+	    width: 60px;
+	    height: 50px;
+		}
+
+
+		li.notifications {
+			background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -170px;
+	    width: 60px;
+	    height: 50px;
+		}
+	}
+}
+
+.settings-block {
+	float: left;
+		ul {
+			> li {
+				display: inline-block;
+				margin-right: 2px;
+				cursor: pointer;
+				> a {
+					display: block;
+							text-indent: -999em;
+						}
+				} 
+
+				li.privacy {
+						background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -170px;
+				    width: 60px;
+				    height: 50px;
+				}
+
+				li.settings {
+						background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -170px;
+				    width: 60px;
+				    height: 50px;
+				}
+		}
+	}
