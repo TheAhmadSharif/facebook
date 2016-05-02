@@ -20,6 +20,10 @@ a {
 		text-decoration: none;
 	}
 }
+
+.container {
+	width: 976px !important;
+}
 #headerSection {
 	background-color: #3B5998;
 	width: 100%;
@@ -75,23 +79,23 @@ a {
 
 }
 .search-icon {
-    background: url("../images/-Id76Wgekmg.png") no-repeat -76px -279px;
+    background: url("../images/k73czxfkmQD.png") no-repeat -65px -234px;
     width: 30px;
     height: 21px;
     cursor: pointer;
     position: absolute;
     z-index: 99;
     left: 12px;
-    background-size: 102px 384px;
+    background-size: 90px 326px;
     zoom: 0.9;
 }
 .s-btn {
-		background-color: #5890ff;
+	background-color: #F2F2F2;
     position: absolute;
     right: -1px;
     top: 0;
     width: 40px;
-    height: 24px;
+    height: 22px;
     border: 0;
     outline: 0;
     -webkit-border-top-right-radius: 3px;
@@ -162,3 +166,68 @@ ul.header-list > li:first-child > a {
 	}
 }
 
+.connect-block {
+	float: left;
+
+	ul {
+			li {
+				display: inline-block;
+				margin-right: 2px;
+				width: 40px;
+		  		height: 32px;
+				cursor: pointer;
+				margin-top: 5px;
+				> a {
+					display: block;
+					text-indent: -999em;
+				}
+		} 
+		li.friendRequest {
+			    background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -740px;
+    			background-size: 40px 1248px;
+		    
+		}
+
+		li.msgs {
+		     background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -393px;
+   			 background-size: 40px 1250px;
+		}
+
+
+		li.notifications {
+			background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -952px;
+		    background-size: 38px 1248px;
+		    opacity: 0.5;
+		    height: 30px;
+		}
+	}
+}
+
+.settings-block {
+	float: left;
+		ul {
+			> li {
+				width: 40px;
+				height: 30px;
+				display: inline-block;
+				margin-right: 2px;
+				cursor: pointer;
+				> a {
+					display: block;
+							text-indent: -999em;
+						}
+				} 
+
+				li.privacy {
+						background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -170px;
+				}
+
+				li.settings {
+						background: url("../images/mZ60q_p4Y2T.png") no-repeat 0 -170px;
+				}
+		}
+	}
+.header-rs {
+	float: right;
+	width: 100%;
+}
