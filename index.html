@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="live.js"></script>
 </head>
 <body>
@@ -55,15 +58,15 @@
 
 									<div class="connect-block">
 										<ul class="h-list">
-											<li class="friendRequest" title="Friend request"><a href="#">Friend request</a></li>
-											<li class="msgs" title="Messages"><a href="#">Messages</a></li>
-											<li class="notifications" title="Notifications"><a href="#">Notifications</a></li>
+											<li class="friendRequest" title="Friend request" data-toggle="tooltip" data-placement="bottom" title="Friend request"><a href="#">Friend request</a></li>
+											<li class="msgs" title="Messages" data-toggle="tooltip" data-placement="bottom" title="Messages"><a href="#">Messages</a></li>
+											<li class="notifications" title="Notifications" data-toggle="tooltip" data-placement="bottom" title="Messages"><a href="#">Notifications</a></li>
 										</ul>
 									</div> <!-- End -->
 
 									<div class="settings-block">
 											<ul class="h-list">
-												<li class="privacy" title="Privacy settings"><a href="#">Privacy settings</a></li>
+												<li class="privacy" title="Privacy Shortcuts" data-toggle="tooltip" data-placement="bottom" title="Messages"><a href="#">Privacy settings</a></li>
 												<li class="settings" title="Settings"><a href="#">settings</a></li>
 											</ul>
 									</div> <!-- End Settings Block -->
@@ -113,19 +116,70 @@
 
 
 								<li>
-									<a href="#"> <span class="fb-icon evnts_icon"></span> Saved </a>
+									<a href="#"> <span class="fb-icon gr_icon"></span> phpXperts <span class="count_post"> 11 </span></a>
 								</li>
 
+								<li>
+									<a href="#"> <span class="fb-icon gr_icon1"></span> MotorcycleValley </a>
+								</li>
 
 								<li>
-									<a href="#"> <span class="fb-icon evnts_icon"></span>News Feed</a>
+									<a href="#"> <span class="fb-icon saved_icon"></span>Saved  <span class="count_post"> 2 </span></a>
 								</li>
 							</ul>
 						</aside>					
-				</div> <!-- End Col 12  -->
+				</div> <!-- End Col 2  -->
+
+				<div class="col-sm-8">
+					<div class="s-box">
+							<div class="sb-header">
+								<ul class="sb-hl">
+									<li class="us" data-toggle="tooltip" data-placement="top" title="Update Status">
+									<span class="fb-icon span_us"></span><a href="#"> <span class="arrow"></span>Update Status</a></li>
+									<li  data-toggle="tooltip" data-placement="top" title="Add Photo/Video"><span class="fb-icon add_pv"></span><a href="#">Add Photo/Video</a></li>
+									<li  data-toggle="tooltip" data-placement="top" title="Create Photo Album"><span class="fb-icon add_pa"></span><a href="#">Create Photo Album</a></li>
+								
+								</ul>
+							</div> <!-- End sb header -->
+
+							<div class="sib">
+								<div class="u-avatar">
+										<a href="#"><img src="assets/images/10354686_10150004552801856_220367501106153455_n.jpg" alt="Ahmad Sharif"></a>
+								</div> <!-- End user profile -->
+
+								<div class="textarea-s">
+										<textarea cols="30" rows="10" placeholder="What's on your mind ?"></textarea>
+								</div> <!-- End Input s -->
+							</div> <!-- End -->
+
+							<div class="sib-footer">
+									<ul class="sib-flist">
+										<li class="camera" data-toggle="tooltip" data-placement="top" title="Add photos or video to your post"><a href="#">Add photos or video to your post</a></li>
+
+										<li class="tag_people" data-toggle="tooltip" data-placement="top" title="Tag people in your post"><a href="#">Tag people in your post</a></li>
+
+										<li class="doing" data-toggle="tooltip" data-placement="top" title="Add what you are doing or how you are feeling"><a href="#">Add what you are doing or how you are feeling </a></li>
+
+										<li class="checkin" data-toggle="tooltip" data-placement="top" title="Check In"><a href="#">Check In</a></li>
+									</ul>
+
+									<ul class="sib-post">
+										<li><button class="btn btn-default">Friends</button></li>
+										<li><button class="btn btn-post">Post</button></li>
+									</ul>
+							</div> <!-- End Sib Footer -->
+					</div> <!-- End S Box -->
+				</div> <!-- End col 8 -->
 			</div> <!-- End row  -->	
 		</div> <!-- End Container  -->
 	</section> <!-- End Section -->
+
+
+	<script>
+		$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			})
+	</script>
 
 </body>
 </html>
