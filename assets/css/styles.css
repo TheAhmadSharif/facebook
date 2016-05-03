@@ -25,6 +25,9 @@ a {
 .mt-0 {
   margin-top: 0 !important; }
 
+.mr-5 {
+  margin-right: 5px !important; }
+
 .bold {
   font-weight: bold; }
 
@@ -356,9 +359,31 @@ ul.header-list > li:first-child > a {
         background-size: 48px 240px; }
     .s-box .sib-footer .sib-post {
       float: right; }
+      .s-box .sib-footer .sib-post .fb_icon {
+        background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
+        background-size: 46px 230px;
+        width: 18px;
+        height: 18px;
+        float: left; }
       .s-box .sib-footer .sib-post li {
         display: inline-block;
         margin-right: 5px; }
+      .s-box .sib-footer .sib-post .btn-fb {
+        border-radius: 2px;
+        font-size: 14px;
+        height: 28px;
+        line-height: 1em; }
+      .s-box .sib-footer .sib-post .btn-post {
+        background-color: #4267b2;
+        border-color: #4267b2;
+        border-radius: 2px;
+        color: #FFF;
+        font-size: 14px;
+        height: 28px;
+        line-height: 1em; }
+        .s-box .sib-footer .sib-post .btn-post:hover {
+          background-color: #365899;
+          border-color: #365899; }
   .s-box .sb-hl > li {
     display: inline-block;
     padding-right: 10px;

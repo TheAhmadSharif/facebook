@@ -29,6 +29,9 @@ a {
 .mt-0 {
 	margin-top: 0 !important;
 }
+.mr-5 {
+	margin-right: 5px !important;
+}
 
 .bold {
 	font-weight: bold;
@@ -445,9 +448,36 @@ ul.header-list > li:first-child > a {
 
   		.sib-post {
   			float: right;
+
+  			.fb_icon {
+  				background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
+			    background-size: 46px 230px;
+			    width: 18px;
+			    height: 18px;
+			    float: left;
+  			}
   			li {
 						display: inline-block;
 						margin-right: 5px;
+  			}
+  			.btn-fb {
+  				border-radius: 2px;
+  				font-size: 14px;
+   				height: 28px;
+   				line-height: 1em;
+  			}
+  			.btn-post {
+  				background-color: #4267b2;
+   				border-color: #4267b2;
+   				border-radius: 2px;
+   				color: #FFF;
+   				font-size: 14px;
+   				height: 28px;
+   				line-height: 1em;
+   				&:hover {
+   					background-color: #365899;
+   					border-color: #365899;
+   				}
   			}
   	}
   }
