@@ -31,7 +31,12 @@ hr.fb {
 .container {
 	width: 1024px !important;
 }
-
+.btn-fb {
+	border-radius: 2px;
+	font-size: 14px;
+	height: 28px;
+	line-height: 1em;
+			}
 .mt-0 {
 	margin-top: 0 !important;
 }
@@ -592,7 +597,7 @@ ul.header-list > li:first-child > a {
   border: 1px solid #ddd;
   width: 100%;
   left: 44px;
-  max-width: 432px;
+  max-width: 450px;
 
   background: #fff;
   border: 1px solid #ccc;
@@ -722,6 +727,8 @@ li.settings {
 	margin-left: 0;
 	padding: 10px;
 	width: 100%;
+	max-height: 240px;
+	overflow: auto;
 	background-color: #FFF;
 	border-radius: 2px;
 
@@ -738,6 +745,8 @@ li.settings {
 				border-bottom: 1px solid #DDD;
 				margin: 5px 0;
 				padding: 5px 0;
+				width: 100%;
+				cursor: pointer;
 
 				img {
 					float: left;
@@ -759,11 +768,72 @@ li.settings {
 	margin-top: 15px;
 	padding: 10px;
 	width: 100%;
+
 	background-color: #FFF;
 	border-radius: 2px;
+	position: relative;
+	z-index: 10;
 
 	border: 1px solid #ccc;
   border-top-color: #d9d9d9;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  .lang-add {
+  	position: absolute;
+  	z-index: 12;
+  	right: 10px;
+  	top: 10px;
+  	border-radius: 2px;
+		font-size: 14px;
+		height: 30px;
+		line-height: 1em;
+
+  }
+}
+.lang-list {
+		max-width: 240px;
+	> li {
+		display: inline-block;
+		margin-right: 5px;
+		color: #666;
+		> a {
+			color: #3b5998;
+	    cursor: pointer;
+	    text-decoration: none;
+
+	    &:hover {
+	    	text-decoration: underline;
+	    }
+		}
+	}
+}
+
+/*  Scroll Style */
+
+.scroll1::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.scroll1::-webkit-scrollbar-track {
+  background: #ddd;
+}
+ 
+.scroll1::-webkit-scrollbar-thumb {
+  background: #666; 
+}
+
+
+.scroll4::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.scroll4::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.scroll4::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
 }
