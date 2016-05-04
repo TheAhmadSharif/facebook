@@ -24,11 +24,80 @@
 							<div class="logoBlock"></div>
 								<div class="searchBlock">
 										<form action="#">
-												<input type="text" placeholder="Search Facebook" autocomplete="on">
+												<input type="text" placeholder="Search Facebook" autocomplete="on" id="searchInput">
 												<button class="s-btn"><span class="fa fa-search"></span></button>
-												
 											</form>
-								</div> <!-- End -->
+											
+											<div class="suggestion-list-div" id="searchSuggestionDiv">
+													<ul class="s-list">
+														<li class="rs"><a href="#">Recent searches <span class="fr">Edit</span></a></li>
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/1.jpg" alt="Nuruzzaman Bappi">
+														</span>Nuruzzaman Bappi</a>
+														</li>
+
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/2.jpg" alt="John Doe">
+														</span>John Doe </a>
+														</li>
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/3.jpg" alt="Tanvir Hussain">
+														</span> Tanvir Hussain</a>
+														</li>
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/4.jpg" alt="Nayem Ahmed">
+														</span>Nayem Ahmed</a>
+														</li>
+
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/5.jpg" alt="Ahmed Mustafa Khan">
+														</span>Ahmed Mustafa Khan</a>
+														</li>
+
+
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/6.jpg" alt="Ahmad Sharif">
+														</span>Ahmad Sharif</a>
+														</li>
+
+
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/7.jpg" alt="Monsur Ahmad">
+														</span>Monsur Ahmed</a>
+														</li>
+
+
+														<li>
+														<a href="#">
+															<span class="profile-img">
+																<img src="assets/images/profile/8.jpg" alt="Tomalika Khandaker">
+														</span>Tomalika Khandaker</a>
+														</li>
+
+
+													</ul>
+											</div> <!-- End Suggestion List Div -->
+								</div> <!-- End search Block-->
 						</div> <!-- End Col -->
 
 						<div class="col-sm-6">
@@ -67,7 +136,109 @@
 									<div class="settings-block">
 											<ul class="h-list">
 												<li class="privacy" title="Privacy Shortcuts" data-toggle="tooltip" data-placement="bottom" title="Messages"><a href="#">Privacy settings</a></li>
-												<li class="settings" title="Settings"><a href="#">settings</a></li>
+												<li class="settings" title="Settings" id="settingsTrigger"><a href="#">settings</a>
+														<div class="settnigs-div">
+																	<span class="settings-title">Your Pages: </span>
+																	<ul class="s-list-ul">
+																		<li>
+																			<img src="assets/images/profile/9.jpg" alt="Steve waugh">
+																			</span>Steve waugh</a>
+																		</li>
+
+																		<li>
+																			<img src="assets/images/profile/9.jpg" alt="Online Shop">
+																			</span>Online Shop</a>
+																		</li>
+
+																		<li>
+																			<img src="assets/images/profile/9.jpg" alt="Steve waugh">
+																			</span>Steve waugh</a>
+																		</li>
+
+																		<li>
+																				<a href="#">See More ... </a>
+																		</li>
+																	</ul>
+																	<hr class="fb">
+
+																	<ul class="s-list-ul">
+																		<li>
+																				<a href="#">Create Page</a>
+																		</li>
+
+																		<li>
+																				<a href="#">Manage Pages</a>
+																		</li>
+																	</ul>
+
+																	<hr class="fb">
+
+																	<ul class="s-list-ul">
+																		<li>
+																				<a href="#">Create Group</a>
+																		</li>
+
+																		<li>
+																				<a href="#">Manage Groups</a>
+																		</li>
+																	</ul>
+
+																	<hr class="fb">
+
+																	<ul class="s-list-ul">
+																		<li>
+																				<a href="#">Create Ads</a>
+																		</li>
+
+																		<li>
+																				<a href="#">Advertising on Facebook</a>
+																		</li>
+																	</ul>
+
+
+																	<hr class="fb">
+
+																	<ul class="s-list-ul">
+																		<li>
+																				<a href="#">Activity Log <span class="ac_count fr">2</span></a>
+																		</li>
+
+																		<li>
+																				<a href="#">News Feed Preferences</a>
+																		</li>
+
+																		<li>
+																				<a href="#">Settings</a>
+																		</li>
+
+
+																		<li>
+																				<a href="#">Logout</a>
+																		</li>
+																	</ul>
+
+
+																	<hr class="fb">
+
+																	<ul class="s-list-ul">
+																		<li>
+																				<a href="#">Help</a>
+																		</li>
+
+																		<li>
+																				<a href="#">Support Inbox<span class="ac_count fr">12</span></a>
+																		</li>
+
+																		<li>
+																				<a href="#">Report a Problem</a>
+																		</li>
+																	</ul>
+
+
+														</div> <!-- End Settings Div -->
+												</li>
+
+												
 											</ul>
 									</div> <!-- End Settings Block -->
 									
@@ -154,6 +325,7 @@
 
 							<div class="sib-footer">
 									<ul class="sib-flist">
+										
 										<li class="camera" data-toggle="tooltip" data-placement="top" title="Add photos or video to your post"><a href="#">Add photos or video to your post</a></li>
 
 										<li class="tag_people" data-toggle="tooltip" data-placement="top" title="Tag people in your post"><a href="#">Tag people in your post</a></li>
@@ -177,7 +349,22 @@
 
 	<script>
 		$(function () {
-			  $('[data-toggle="tooltip"]').tooltip()
+			  $('[data-toggle="tooltip"]').tooltip();
+
+			  $("#searchInput").focusout(function(){
+				   $('#searchSuggestionDiv').slideUp(100);
+				});
+
+				$("#searchInput").focusin(function(){
+				   $('#searchSuggestionDiv').slideDown(100);
+				});
+
+				$('#settingsTrigger').click(function(event) {
+					$('.settnigs-div ').slideToggle(200);
+					console.log('Hi');
+				});
+
+
 			})
 	</script>
 
