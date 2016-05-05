@@ -586,9 +586,7 @@ li.settings {
   position: relative;
   z-index: 10;
   border: 1px solid #ccc;
-  border-top-color: #d9d9d9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  border-top-color: #d9d9d9; }
   .ticker-div .ticker-icon {
     position: absolute;
     z-index: 11;
@@ -694,7 +692,8 @@ li.settings {
   float: left;
   width: 100%;
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  margin-bottom: 30px; }
   .people-status-div .li-status {
     float: left;
     width: 100%;
@@ -774,17 +773,43 @@ li.settings {
     background-position: -30px -211px; }
   .people-reaction-activity .r-activity-list .comment {
     float: left;
-    width: 19px;
-    height: 14px;
+    width: 14px;
+    height: 13px;
     background: url("../images/YT7RpIpQr2m.png") no-repeat;
-    background-size: 64px 334px;
-    background-position: -30px -211px; }
+    background-size: 75px 280px;
+    background-position: -20px -178px;
+    margin: 4px 7px 0px 8px; }
   .people-reaction-activity .r-activity-list .share {
     float: left;
-    width: 19px;
+    width: 20px;
     height: 14px;
     background: url("../images/YT7RpIpQr2m.png") no-repeat;
     background-size: 64px 334px;
-    background-position: -30px -211px; }
+    background-position: -46px -225px; }
+
+.hash-tag {
+  color: #3b5998;
+  text-decoration: underline;
+  font-weight: bold; }
+
+.suggest-connection {
+  background-color: #FFF;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-top-color: #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.suggest-connection ul li {
+  display: inline-block;
+  margin-right: 5px;
+  float: left; }
+  .suggest-connection ul li a {
+    float: left;
+    color: #3b5998; }
 
 /*# sourceMappingURL=styles.css.map */
