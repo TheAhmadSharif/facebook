@@ -15,7 +15,8 @@ ul, ol, li {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3b5998; }
   a:hover {
     text-decoration: none; }
 
@@ -64,12 +65,11 @@ hr.fb {
   margin-top: 8px;
   display: block;
   position: relative;
-  z-index: 11;
+  z-index: 13;
   margin-left: -10px;
   left: 0;
   max-width: 500px;
-  position: relative;
-  z-index: 10; }
+  position: relative; }
   .searchBlock input {
     border: 0;
     outline: 0;
@@ -220,7 +220,9 @@ ul.header-list > li:first-child > a {
     background: url("../images/66mSB924h08.png") no-repeat -4px -125px;
     background-size: 111px 151px;
     height: 20px;
-    width: 12px; }
+    width: 12px;
+    position: relative;
+    z-index: 14; }
 
 .header-rs {
   float: right; }
@@ -336,7 +338,7 @@ ul.header-list > li:first-child > a {
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   border-radius: 3px;
   position: relative;
-  z-index: 1; }
+  z-index: 12; }
   .s-box .sb-header {
     float: left;
     padding-bottom: 10px;
@@ -374,39 +376,39 @@ ul.header-list > li:first-child > a {
       .s-box .sib-footer .sib-flist li.checkin {
         background: url("../images/Z3jnZLsaMc9.png") no-repeat -14px -5px;
         background-size: 48px 240px; }
-    .s-box .sib-footer .sib-post {
-      float: right; }
-      .s-box .sib-footer .sib-post .fb_icon {
-        background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
-        background-size: 46px 230px;
-        width: 18px;
-        height: 18px;
-        float: left; }
-      .s-box .sib-footer .sib-post li {
-        display: inline-block;
-        margin-right: 5px; }
-      .s-box .sib-footer .sib-post .btn-fb {
-        border-radius: 2px;
-        font-size: 14px;
-        height: 28px;
-        line-height: 1em; }
-      .s-box .sib-footer .sib-post .btn-post {
-        background-color: #4267b2;
-        border-color: #4267b2;
-        border-radius: 2px;
-        color: #FFF;
-        font-size: 14px;
-        height: 28px;
-        line-height: 1em; }
-        .s-box .sib-footer .sib-post .btn-post:hover {
-          background-color: #365899;
-          border-color: #365899; }
+  .s-box .sib-post {
+    float: right; }
+    .s-box .sib-post .fb_icon {
+      background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
+      background-size: 46px 230px;
+      width: 18px;
+      height: 18px;
+      float: left; }
+    .s-box .sib-post > li {
+      display: inline-block;
+      margin-right: 5px; }
+    .s-box .sib-post .btn-fb {
+      border-radius: 2px;
+      font-size: 14px;
+      height: 28px;
+      line-height: 1em; }
+    .s-box .sib-post .btn-post {
+      background-color: #4267b2;
+      border-color: #4267b2;
+      border-radius: 2px;
+      color: #FFF;
+      font-size: 14px;
+      height: 28px;
+      line-height: 1em; }
+      .s-box .sib-post .btn-post:hover {
+        background-color: #365899;
+        border-color: #365899; }
   .s-box .sb-hl > li {
     display: inline-block;
     padding-right: 10px;
     float: left;
     border-right: 1px solid #E5E5E5;
-    margin-right: 15px;
+    margin-right: 10px;
     position: relative;
     z-index: 10; }
     .s-box .sb-hl > li:hover {
@@ -702,8 +704,6 @@ li.settings {
     padding: 10px;
     background-color: #FFF;
     border-radius: 3px;
-    position: relative;
-    z-index: 10;
     border: 1px solid #ccc;
     border-top-color: #d9d9d9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -804,12 +804,128 @@ li.settings {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
 
+.suggest-connection .sc-title {
+  color: #90949c;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: bold;
+  float: left; }
 .suggest-connection ul li {
   display: inline-block;
   margin-right: 5px;
   float: left; }
   .suggest-connection ul li a {
+    float: left; }
+.suggest-connection hr.sa {
+  margin-bottom: 10px;
+  width: 100%;
+  float: left; }
+.suggest-connection .friend_icon {
+  float: left;
+  width: 25px;
+  height: 20px;
+  background: url("../images/Z3jnZLsaMc9.png") no-repeat;
+  background-size: 40px 200px;
+  background-position: -10px -84px; }
+.suggest-connection .req-btn {
+  font-weight: bold;
+  color: #666; }
+
+#privacyArea {
+  position: relative;
+  z-index: 11;
+  top: 0; }
+
+.privacyOption {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  top: 27px;
+  right: 0;
+  background: #FFF;
+  padding: 0;
+  border-radius: 3px;
+  width: 200px;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  .privacyOption .title {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    float: left; }
+
+.privacy-desc-ul li {
+  display: block;
+  margin: 2px;
+  cursor: pointer;
+  line-height: 0; }
+.privacy-desc-ul li.short-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; }
+.privacy-desc-ul li.privacy-desc-li {
+  font-size: 12px;
+  color: #666; }
+
+.privacy-option-list {
+  float: left;
+  width: 100%; }
+  .privacy-option-list li {
+    padding: 0;
+    margin: 1px 0;
     float: left;
-    color: #3b5998; }
+    width: 100%; }
+    .privacy-option-list li a {
+      float: left;
+      width: 100%;
+      color: #666;
+      font-weight: bold;
+      padding: 4px 0 0px 25px;
+      background-color: #F6F7F8;
+      position: relative;
+      z-index: 12; }
+      .privacy-option-list li a:hover {
+        color: #FFF;
+        background-color: #3b5998; }
+  .privacy-option-list li.pol-mo-li a {
+    background-color: #FFF; }
+    .privacy-option-list li.pol-mo-li a:hover {
+      color: #333; }
+
+.p-title {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5em; }
+
+.privacy-desc {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 270px;
+  padding-bottom: 7px;
+  padding-left: 22px;
+  padding-right: 8px;
+  white-space: normal; }
+
+.friends-icon {
+  background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
+  background-size: 46px 230px;
+  width: 18px;
+  height: 18px;
+  float: left; }
+
+.s-option {
+  position: absolute;
+  z-index: 14;
+  left: 8px;
+  top: 4px;
+  float: left; }
 
 /*# sourceMappingURL=styles.css.map */

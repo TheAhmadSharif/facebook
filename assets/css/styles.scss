@@ -17,6 +17,7 @@ ul,ol,li {
 }
 a {
 	text-decoration: none;
+	color: #3b5998;
 	&:hover {
 		text-decoration: none;
 	}
@@ -72,12 +73,11 @@ hr.fb {
 	margin-top: 8px;
 	display: block;
 	position: relative;
-	z-index: 11;
+	z-index: 13;
 	margin-left: -10px;
 	left: 0;
 	max-width: 500px;
 	position: relative;
-	z-index: 10;
 	input {
 		border: 0;
 		outline: 0;
@@ -270,6 +270,8 @@ ul.header-list > li:first-child > a {
 				    background-size: 111px 151px;
 				    height: 20px;
 				    width: 12px;
+				    position: relative;
+				    z-index: 14;
 				}
 		}
 	}
@@ -409,7 +411,7 @@ ul.header-list > li:first-child > a {
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   border-radius: 3px;
   position: relative;
-  z-index: 1;
+  z-index: 12;
 
   .sb-header {
     float: left;
@@ -463,7 +465,10 @@ ul.header-list > li:first-child > a {
   		
   		}
 
-  		.sib-post {
+  		
+  }
+
+.sib-post {
   			float: right;
 
   			.fb_icon {
@@ -473,7 +478,7 @@ ul.header-list > li:first-child > a {
 			    height: 18px;
 			    float: left;
   			}
-  			li {
+  			> li {
 						display: inline-block;
 						margin-right: 5px;
   			}
@@ -497,16 +502,13 @@ ul.header-list > li:first-child > a {
    				}
   			}
   	}
-  }
-
-
 	.sb-hl {
 		> li {
 			    display: inline-block;
 			    padding-right: 10px;
 			    float: left;
 			    border-right: 1px solid #E5E5E5;
-			    margin-right: 15px;
+			    margin-right: 10px;
 			    position: relative;
 			    z-index: 10;
 			    &:hover {
@@ -889,8 +891,6 @@ li.settings {
 
 		background-color: #FFF;
 		border-radius: 3px;
-		position: relative;
-		z-index: 10;
 
 		border: 1px solid #ccc;
 	  border-top-color: #d9d9d9;
@@ -1022,14 +1022,158 @@ li.settings {
 }
 
 .suggest-connection {
+	.sc-title {
+		color: #90949c;
+		font-size: 14px;
+		line-height: 12px;
+		font-weight: bold;
+		float: left;
+	}
 		ul li {
 				display: inline-block;
 				margin-right: 5px;
 				float: left;
 			a {
 				float: left;
-				color: #3b5998;
 			}		
 		}
-	
+		hr.sa {
+			margin-bottom: 10px;
+			width: 100%;
+			float: left;
+		}	
+		.friend_icon {
+			float: left;
+	    width: 25px;
+	    height: 20px;
+	    background: url("../images/Z3jnZLsaMc9.png") no-repeat;
+	    background-size: 40px 200px;
+	    background-position: -10px -84px;
+		}
+		.req-btn {
+			font-weight: bold;
+			color: #666;
+		}
+
+}
+
+
+#privacyArea {
+	position: relative;
+	z-index: 11;
+	top: 0;
+}
+
+.privacyOption {
+	display: none; 
+	position: absolute;
+	z-index: 30;
+	top: 27px;
+	right: 0;
+	background: #FFF;
+	padding: 0;
+	border-radius: 3px;
+	width: 200px;
+	height: auto;
+
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+  border-top: 1px solid rgba(0, 0, 0, .05);
+
+  .title {
+  	width: 100%;
+  	padding: 10px 20px;
+  	font-size: 14px;
+  	float: left;
+  }
+}
+.privacy-desc-ul {
+	li {
+		display: block;
+		margin: 2px;
+		cursor: pointer;
+		line-height: 0;
+	}
+	li.short-title {
+		font-size: 14px;
+		font-weight: bold;
+		color: #333;
+	}
+	li.privacy-desc-li {
+		font-size: 12px;
+		color: #666;
+	}
+}
+.privacy-option-list {
+		float: left;
+		width: 100%;
+	li {
+		padding: 0;
+		margin: 1px 0;
+		float: left;
+		width: 100%;
+		a {
+			float: left;
+	    width: 100%;
+	    color: #666;
+	    font-weight: bold;
+	    padding: 4px 0 0px 25px;
+	    background-color: #F6F7F8;
+	    position: relative;
+	    z-index: 12;
+
+			&:hover {
+				color: #FFF;
+				background-color: #3b5998;
+			}
+		}
+	}
+
+	li.pol-mo-li {
+		a {
+			background-color: #FFF;
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+}
+
+.p-title {
+	padding-left: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+.privacy-desc {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.5;
+    max-width: 270px;
+    padding-bottom: 7px;
+    padding-left: 22px;
+    padding-right: 8px;
+    white-space: normal;
+}
+.friends-icon {
+		background: url("../images/Z3jnZLsaMc9.png") no-repeat -20px -130px;
+    background-size: 46px 230px;
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+.s-option {
+		position: absolute;
+    z-index: 14;
+    left: 8px;
+    top: 4px;
+    float: left;
 }
