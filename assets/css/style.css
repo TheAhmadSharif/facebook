@@ -605,8 +605,8 @@ li.settings {
     .ticker-div .ticker-list > li {
       float: left;
       border-bottom: 1px solid #DDD;
-      margin: 5px 0;
-      padding: 5px 0;
+      margin: 0;
+      padding: 10px 0;
       width: 100%;
       cursor: pointer; }
       .ticker-div .ticker-list > li img {
@@ -804,33 +804,70 @@ li.settings {
   border-top-color: #d9d9d9;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.2); }
-
-.suggest-connection .sc-title {
-  color: #90949c;
-  font-size: 14px;
-  line-height: 12px;
-  font-weight: bold;
-  float: left; }
-.suggest-connection ul li {
-  display: inline-block;
-  margin-right: 5px;
-  float: left; }
-  .suggest-connection ul li a {
+  .suggest-connection .sc-title {
+    color: #90949c;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: bold;
     float: left; }
-.suggest-connection hr.sa {
-  margin-bottom: 10px;
-  width: 100%;
-  float: left; }
-.suggest-connection .friend_icon {
-  float: left;
-  width: 25px;
-  height: 20px;
-  background: url("../images/Z3jnZLsaMc9.png") no-repeat;
-  background-size: 40px 200px;
-  background-position: -10px -84px; }
-.suggest-connection .req-btn {
-  font-weight: bold;
-  color: #666; }
+  .suggest-connection ul > li {
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%; }
+    .suggest-connection ul > li a {
+      float: left; }
+  .suggest-connection hr.sa {
+    margin-bottom: 10px;
+    width: 100%;
+    float: left; }
+  .suggest-connection .friend_icon {
+    float: left;
+    width: 18px;
+    height: 20px;
+    background: url("../images/Z3jnZLsaMc9.png") no-repeat;
+    background-size: 30px 180px;
+    background-position: -8px -74px; }
+  .suggest-connection .req-btn {
+    font-weight: bold;
+    color: #666;
+    float: left;
+    clear: both;
+    background: #FFF;
+    border: 1px solid;
+    max-width: 177px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #ced0d4;
+    color: #4b4f56;
+    border-radius: 2px;
+    box-sizing: content-box;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    cursor: pointer; }
+  .suggest-connection .req-btn:hover {
+    background: #e9ebee; }
+  .suggest-connection .req-block {
+    float: left;
+    margin-left: 10px;
+    width: 80%; }
+    .suggest-connection .req-block .close-suggestion {
+      float: right;
+      color: #ADBED6;
+      border-radius: 2px;
+      padding: 2px;
+      font-size: 10px; }
+      .suggest-connection .req-block .close-suggestion:hover {
+        background: #6585b3;
+        color: #FFF;
+        cursor: pointer; }
 
 #privacyArea {
   position: relative;
@@ -928,5 +965,23 @@ li.settings {
   left: 8px;
   top: 4px;
   float: left; }
+
+.cover-photo-block {
+  background: url("../images/cover.jpg") no-repeat;
+  width: 100%;
+  height: 320px;
+  position: relative;
+  z-index: 10;
+  top: 0; }
+
+.profile-pic {
+  width: 160px;
+  height: 190px;
+  padding: 5px;
+  border-radius: 2px;
+  background: #FFF;
+  position: absolute;
+  bottom: 20px;
+  left: 20px; }
 
 /*# sourceMappingURL=style.css.map */
