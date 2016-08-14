@@ -27,7 +27,7 @@ hr.fb {
   border-bottom: 1px solid #DDD; }
 
 .container {
-  width: 1024px !important; }
+  width: 1046px !important; }
 
 .btn-fb {
   border-radius: 2px;
@@ -53,10 +53,10 @@ hr.fb {
   height: 42px; }
 
 .logoBlock {
-  background: url("../images/66mSB924h08.png") no-repeat -44px -26px;
+  background: url("../images/66mSB924h08.png") no-repeat -44px -28px;
   width: 34px;
-  height: 40px;
-  background-size: 100px 141px;
+  height: 32px;
+  background-size: 100px 145px;
   float: left; }
   .logoBlock:hover {
     cursor: pointer; }
@@ -78,7 +78,7 @@ hr.fb {
     padding-left: 10px;
     width: 100%;
     max-width: 410px;
-    height: 26px;
+    height: 24px;
     position: absolute;
     z-index: 11; }
   .searchBlock ::-webkit-input-placeholder {
@@ -108,10 +108,10 @@ hr.fb {
 .s-btn {
   background-color: #F2F2F2;
   position: absolute;
-  right: -1px;
+  right: 8px;
   top: 0;
   width: 40px;
-  height: 26px;
+  height: 24px;
   border: 0;
   outline: 0;
   -webkit-border-top-right-radius: 3px;
@@ -966,22 +966,151 @@ li.settings {
   top: 4px;
   float: left; }
 
+.profile-page .container {
+  width: 1024px !important; }
+
 .cover-photo-block {
-  background: url("../images/cover.jpg") no-repeat;
+  background: url("../images/cover6.jpg") no-repeat;
   width: 100%;
   height: 320px;
   position: relative;
-  z-index: 10;
-  top: 0; }
+  top: 0;
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: bottom right; }
+  .cover-photo-block h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 275px;
+    position: absolute;
+    left: 200px;
+    bottom: 20px; }
+  .cover-photo-block a {
+    color: #FFF; }
 
 .profile-pic {
-  width: 160px;
-  height: 190px;
+  width: 170px;
+  height: 170px;
   padding: 5px;
   border-radius: 2px;
   background: #FFF;
+  bottom: -10px;
+  left: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #d3d6db;
   position: absolute;
-  bottom: 20px;
-  left: 20px; }
+  z-index: 12; }
+  .profile-pic img {
+    max-width: 160px;
+    height: auto; }
+
+.action-block {
+  position: relative;
+  top: 270px;
+  right: 10px;
+  float: right; }
+  .action-block ul > li {
+    display: inline-block;
+    float: left;
+    margin-right: 0;
+    background: #FFF;
+    color: #333;
+    color: #585a5d;
+    cursor: pointer;
+    border: 0;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    border-right: 1px solid #d2d2d2; }
+  .action-block ul > li:nth-child(2n) {
+    border-radius: 0; }
+
+.more-action {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 122px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  z-index: 12; }
+  .more-action ul > li {
+    border: 0;
+    clear: both;
+    width: 100%;
+    font-weight: normal; }
+    .more-action ul > li:hover {
+      background: #3B5998;
+      color: #FFF; }
+  .more-action ul > li:first-child {
+    border-bottom: 1px solid #D3D6DB; }
+  .more-action:before {
+    content: ' ';
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid transparent;
+    border-bottom-color: #FFF;
+    border-width: 10px;
+    z-index: 10; }
+  .more-action:after {
+    content: ' ';
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid transparent;
+    border-bottom-color: #333;
+    border-width: 10px;
+    z-index: 9; }
+
+.user-info-nav {
+  width: 100%;
+  background: #FFF;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  top: -10px;
+  border-bottom: 1px solid #D3D6DB; }
+  .user-info-nav .timeline a {
+    color: #333; }
+  .user-info-nav .timeline:before {
+    content: ' ';
+    position: absolute;
+    border: solid transparent; }
+  .user-info-nav nav {
+    position: relative;
+    margin-left: 190px;
+    z-index: 12; }
+  .user-info-nav ul > li {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: bold; }
+  .user-info-nav li.moreDropdown {
+    position: relative;
+    z-index: 11; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  z-index: 12;
+  background: #FFF;
+  font-weight: normal;
+  padding: 10px;
+  border: 1px solid #EEE; }
+  .dropdown-content ul > li {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

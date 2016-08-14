@@ -30,7 +30,7 @@ hr.fb {
 	border-bottom: 1px solid #DDD;
 }
 .container {
-	width: 1024px !important;
+	width: 1046px !important;
 }
 .btn-fb {
 	border-radius: 2px;
@@ -59,10 +59,10 @@ hr.fb {
 }
 
 .logoBlock {
-    background: url("../images/66mSB924h08.png") no-repeat -44px -26px;
+    background: url("../images/66mSB924h08.png") no-repeat -44px -28px;
     width: 34px;
-    height: 40px;
-    background-size: 100px 141px;
+    height: 32px;
+    background-size: 100px 145px;
     float: left;
 		&:hover {
 			cursor: pointer;
@@ -86,7 +86,7 @@ hr.fb {
 		padding-left: 10px;
 		width: 100%;
 		max-width: 410px;
-		height: 26px;
+		height: 24px;
 		position: absolute;
 		z-index: 11;
 	}
@@ -125,10 +125,10 @@ hr.fb {
 .s-btn {
 	background-color: #F2F2F2;
     position: absolute;
-    right: -1px;
+    right: 8px;
     top: 0;
     width: 40px;
-    height: 26px;
+    height: 24px;
     border: 0;
     outline: 0;
     -webkit-border-top-right-radius: 3px;
