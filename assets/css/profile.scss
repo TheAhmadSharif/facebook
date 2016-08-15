@@ -1,3 +1,6 @@
+$brand-color: #3b5998;
+$border-color: #d2d3d6;
+
 .profile-page .container {
 	width: 1024px !important;
 }
@@ -139,11 +142,27 @@
     .timeline a {
     	color: #333;
     }
-
+		
     .timeline:before {
 			content: ' ';
 			position: absolute;
 			border: solid transparent; 
+			bottom: -10px;
+			border-bottom-color: #e9eaed;
+			border-width: 6px;
+			z-index: 11;
+			left: 10px;
+    }
+
+    .timeline:after {
+			content: ' ';
+	    position: absolute;
+	    border: solid transparent;
+	    bottom: -11px;
+	    left: 9px;
+	    border-bottom-color: #d3d6db;
+	    border-width: 7px;
+	    z-index: 10;
     }
 	
 	nav {
@@ -180,4 +199,36 @@
 		cursor: pointer;
 		margin-bottom: 5px;
 	}
+}
+
+.intro-block {
+	background: #FFF;
+	border:1px solid #d2d3d6;
+	border-bottom: 1px solid $border-color;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	header {
+		padding: 10px;
+		background: #F6F7F9;
+		color: #4b4f56;
+		font-size: 12px;
+		border-bottom: 1px solid #E9EAED;
+	}
+
+	article {
+		padding: 10px;
+		color: #90949c;
+	}
+	a {
+		color: $brand-color;
+	}
+}
+
+.public-info-block {
+	background: #FFF;
+	border:1px solid #d2d3d6;
+	border-bottom: 1px solid $border-color;
+	border-radius: 2px;
+	padding: 10px;
+	width: 313px;
 }

@@ -481,7 +481,7 @@ ul.header-list > li:first-child > a {
   border: 1px solid #ddd;
   width: 100%;
   left: 44px;
-  max-width: 450px;
+  max-width: 440px;
   background: #fff;
   border: 1px solid #DDD;
   border-top-color: #d9d9d9;
@@ -1084,7 +1084,21 @@ li.settings {
   .user-info-nav .timeline:before {
     content: ' ';
     position: absolute;
-    border: solid transparent; }
+    border: solid transparent;
+    bottom: -10px;
+    border-bottom-color: #e9eaed;
+    border-width: 6px;
+    z-index: 11;
+    left: 10px; }
+  .user-info-nav .timeline:after {
+    content: ' ';
+    position: absolute;
+    border: solid transparent;
+    bottom: -11px;
+    left: 9px;
+    border-bottom-color: #d3d6db;
+    border-width: 7px;
+    z-index: 10; }
   .user-info-nav nav {
     position: relative;
     margin-left: 190px;
@@ -1112,5 +1126,31 @@ li.settings {
     font-weight: normal;
     cursor: pointer;
     margin-bottom: 5px; }
+
+.intro-block {
+  background: #FFF;
+  border: 1px solid #d2d3d6;
+  border-bottom: 1px solid #d2d3d6;
+  border-radius: 2px;
+  margin-bottom: 10px; }
+  .intro-block header {
+    padding: 10px;
+    background: #F6F7F9;
+    color: #4b4f56;
+    font-size: 12px;
+    border-bottom: 1px solid #E9EAED; }
+  .intro-block article {
+    padding: 10px;
+    color: #90949c; }
+  .intro-block a {
+    color: #3b5998; }
+
+.public-info-block {
+  background: #FFF;
+  border: 1px solid #d2d3d6;
+  border-bottom: 1px solid #d2d3d6;
+  border-radius: 2px;
+  padding: 10px;
+  width: 313px; }
 
 /*# sourceMappingURL=style.css.map */
