@@ -229,6 +229,54 @@ $border-color: #d2d3d6;
 	border:1px solid #d2d3d6;
 	border-bottom: 1px solid $border-color;
 	border-radius: 2px;
-	padding: 10px;
+	padding: 15px;
 	width: 313px;
+
+	header {
+		padding-bottom: 20px;
+		border-bottom:1px solid #d2d3d6;
+	}
+	
+	.title {
+		margin-bottom: 10px;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    background: url("../images/cE273ULBlDv.png") no-repeat 0px -20px;
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+	}
+	.sub-title {
+		font-size: 12px;
+	}
+	
+	.info-list {
+		margin-top: 20px;
+	}
+	.info-list > li {
+		display: block;
+		margin-bottom: 5px;
+	}
+	.link {
+		color: $brand-color;
+		cursor: pointer;
+	}
+	.home-icon {
+		background: url("../images/cE273ULBlDv.png") no-repeat 0px -195px;
+    width: 12px;
+    height: 14px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 1px;
+	}
+
+	.from-icon {
+		background: url("../images/cE273ULBlDv.png") no-repeat -12px -208px;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 1px;
+	}
 }

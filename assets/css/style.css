@@ -966,6 +966,42 @@ li.settings {
   top: 4px;
   float: left; }
 
+.comment-box {
+  display: none;
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 10px;
+  position: relative;
+  z-index: 10; }
+  .comment-box:before {
+    content: ' ';
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    border-top: 1px solid #DDD;
+    width: 492px;
+    margin-left: -10px; }
+  .comment-box .user-pic {
+    max-width: 30px;
+    float: left;
+    margin-right: 5px; }
+  .comment-box textarea {
+    height: 30px;
+    width: 436px;
+    border-radius: 2px;
+    outline: 0;
+    padding: 3px 5px;
+    border: 1px solid #DDD; }
+    .comment-box textarea:focus {
+      border: 1px solid #a0a0a0; }
+  .comment-box .guideline {
+    font-size: 8px;
+    width: 100%;
+    float: left;
+    color: #90949c;
+    margin-left: 40px; }
+
 .profile-page .container {
   width: 1024px !important; }
 
@@ -1150,7 +1186,43 @@ li.settings {
   border: 1px solid #d2d3d6;
   border-bottom: 1px solid #d2d3d6;
   border-radius: 2px;
-  padding: 10px;
+  padding: 15px;
   width: 313px; }
+  .public-info-block header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d2d3d6; }
+  .public-info-block .title {
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    background: url("../images/cE273ULBlDv.png") no-repeat 0px -20px;
+    padding-left: 30px;
+    padding-top: 2px;
+    padding-bottom: 5px; }
+  .public-info-block .sub-title {
+    font-size: 12px; }
+  .public-info-block .info-list {
+    margin-top: 20px; }
+  .public-info-block .info-list > li {
+    display: block;
+    margin-bottom: 5px; }
+  .public-info-block .link {
+    color: #3b5998;
+    cursor: pointer; }
+  .public-info-block .home-icon {
+    background: url("../images/cE273ULBlDv.png") no-repeat 0px -195px;
+    width: 12px;
+    height: 14px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 1px; }
+  .public-info-block .from-icon {
+    background: url("../images/cE273ULBlDv.png") no-repeat -12px -208px;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 1px; }
 
 /*# sourceMappingURL=style.css.map */

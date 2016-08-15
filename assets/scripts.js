@@ -9,4 +9,10 @@ jQuery(document).ready(function() {
 	$('.moreDropdown').click(function(event) {
 			$('.dropdown-content').toggle();
 	});
+
+	$('.commentTrigger a').click(function(event) {
+			event.preventDefault();
+			$(this).parents('.people-reaction-activity').find('.comment-box').toggle();
+			console.log('Hi');
+	});
 });

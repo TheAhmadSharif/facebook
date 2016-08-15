@@ -1229,5 +1229,67 @@ li.settings {
     float: left;
 }
 
+.comment-box {
+	display: none;
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+	padding-top: 10px;
+	position: relative;
+	z-index: 10;
+
+	&:before {
+		content: ' ';
+		position: absolute;
+		z-index: 11;
+		top: 0;
+		border-top: 1px solid #DDD;
+		width: 492px;
+		margin-left: -10px;
+	}
+
+	.user-pic {
+		max-width: 30px;
+		float: left;
+		margin-right: 5px;
+	}
+
+	textarea {
+		height: 30px;
+		width: 436px;
+		border-radius: 2px;
+		outline: 0;
+		padding: 3px 5px;
+		border: 1px solid #DDD;
+		&:focus {
+			border: 1px solid #a0a0a0;
+		}
+	}
+
+	.guideline {
+		font-size: 8px;
+		width: 100%;
+		float: left;
+		color: #90949c;
+		margin-left: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'profile'
+
